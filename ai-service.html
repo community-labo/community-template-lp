@@ -31,7 +31,7 @@
 html,body{font-family:"Noto Sans JP",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;background:linear-gradient(160deg,#0A1628 0%,#111D35 100%);min-height:100vh}
 
 /* ===== LP Wrapper ===== */
-.lp-wrap{max-width:540px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 80px rgba(30,91,230,.2);position:relative;padding-bottom:100px;overflow:hidden}
+.lp-wrap{max-width:1200px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 80px rgba(30,91,230,.2);position:relative;padding-bottom:100px;overflow:hidden}
 
 /* ===== Scroll animations ===== */
 .fade-up{opacity:0;transform:translateY(28px);transition:opacity .55s cubic-bezier(.22,1,.36,1),transform .55s cubic-bezier(.22,1,.36,1)}
@@ -208,7 +208,7 @@ h1.fv-title .accent{background:linear-gradient(90deg,#60A5FA,#93C5FD);-webkit-ba
 
 /* ===== Fixed bottom CTA ===== */
 .fixed-cta{position:fixed;bottom:0;left:0;right:0;z-index:100;display:flex;justify-content:center;pointer-events:none}
-.fixed-cta-inner{width:100%;max-width:540px;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:12px 20px;pointer-events:all;box-shadow:0 -4px 24px rgba(30,91,230,.12)}
+.fixed-cta-inner{width:100%;max-width:1200px;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:12px 20px;pointer-events:all;box-shadow:0 -4px 24px rgba(30,91,230,.12)}
 
 /* ===== Footer ===== */
 .footer{background:var(--navy);padding:32px 22px 24px;color:rgba(255,255,255,.6);font-size:11px}
@@ -228,6 +228,73 @@ h1.fv-title .accent{background:linear-gradient(90deg,#60A5FA,#93C5FD);-webkit-ba
 .check-list li .ck svg{width:12px;height:12px}
 .check-list-light li{color:rgba(255,255,255,.85)}
 .check-list-light li .ck{background:rgba(255,255,255,.12)}
+
+/* ===== FV Portrait ===== */
+.fv-inner{position:relative}
+.fv-portrait{display:none}
+.fv-portrait img{width:100%;height:auto;filter:drop-shadow(0 24px 60px rgba(10,22,40,.6))}
+
+/* ===== PC Responsive (768px+) ===== */
+@media(min-width:768px){
+  .sec{padding:72px 80px}
+  h2.sec-title{font-size:30px}
+  .sec-sub{font-size:14px}
+
+  /* FV 2-column */
+  .fv{padding:80px 80px 72px}
+  .fv-inner{display:grid;grid-template-columns:1fr 380px;gap:60px;align-items:center;max-width:1040px;margin:0 auto}
+  .fv-portrait{display:flex;align-items:flex-end;justify-content:center}
+  h1.fv-title{font-size:46px}
+  .fv-subtitle{font-size:15px}
+  .fv-desc{font-size:15px}
+  .fv-usp{flex-direction:column;gap:10px}
+  .btn-cta{font-size:17px;padding:18px 36px;width:auto;display:inline-flex}
+
+  /* AI Staff: 4 columns */
+  .staff-grid{grid-template-columns:repeat(4,1fr)}
+
+  /* Pain: 2 columns */
+  .pain-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+  /* Works: 2 columns */
+  .works-grid{display:grid;grid-template-columns:1fr 1fr}
+
+  /* Videos: 2 columns */
+  .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+  /* Instructors: 2 columns */
+  .inst-grid{flex-direction:row}
+  .inst-card{flex:1}
+
+  /* Coaching items: 2 columns */
+  .coaching-items{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+  /* Steps: 2 columns */
+  .steps-list{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+
+  /* FAQ: 2 columns */
+  .faq-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+  /* Final CTA */
+  .final-cta-sec{padding:96px 80px}
+  .final-cta-sec h2{font-size:34px}
+
+  /* Message section */
+  .message-section{padding:72px 80px}
+
+  /* Footer */
+  .footer{padding:40px 80px 32px;display:flex;flex-wrap:wrap;gap:0}
+  .footer-links{flex:1}
+  .footer-sns{margin-left:auto;margin-bottom:0}
+
+  /* Fixed CTA inner */
+  .fixed-cta-inner{padding:14px 40px}
+}
+
+@media(min-width:1024px){
+  .fv-inner{max-width:1100px}
+  .fv-portrait img{max-width:360px}
+}
 </style>
 </head>
 <body>
@@ -238,39 +305,44 @@ h1.fv-title .accent{background:linear-gradient(90deg,#60A5FA,#93C5FD);-webkit-ba
        ================================================ -->
   <section class="fv">
     <div class="fv-grid-dots"></div>
-    <div class="fade-up">
-      <span class="fv-badge"><span class="fv-badge-dot"></span>AI経営実践支援サービス</span>
-      <h1 class="fv-title">
-        ClaudeCodeで<br>
-        <span class="accent">AI社員・AIプロダクト</span>を<br>
-        構築する
-      </h1>
-      <p class="fv-subtitle">経営者のための実践型AI支援サービス</p>
-      <p class="fv-desc">
-        AIを導入するだけでは、<br>経営は変わらない。<br><br>
-        必要なのは、<strong>AI活用を前提とした<br>組織へ作り替えること。</strong><br><br>
-        "AI社員＋あなた"で、<br>リソースという概念から解き放たれる。
-      </p>
-      <!-- USP -->
-      <div class="fv-usp">
-        <div class="fv-usp-item">
-          <span class="fv-usp-crown">👑</span>
-          <span class="fv-usp-text">講師は全員エンジニア</span>
+    <div class="fv-inner">
+      <div class="fade-up">
+        <span class="fv-badge"><span class="fv-badge-dot"></span>AI経営実践支援サービス</span>
+        <h1 class="fv-title">
+          ClaudeCodeで<br>
+          <span class="accent">AI社員・AIプロダクト</span>を<br>
+          構築する
+        </h1>
+        <p class="fv-subtitle">経営者のための実践型AI支援サービス</p>
+        <p class="fv-desc">
+          AIを導入するだけでは、<br>経営は変わらない。<br><br>
+          必要なのは、<strong>AI活用を前提とした<br>組織へ作り替えること。</strong><br><br>
+          "AI社員＋あなた"で、<br>リソースという概念から解き放たれる。
+        </p>
+        <!-- USP -->
+        <div class="fv-usp">
+          <div class="fv-usp-item">
+            <span class="fv-usp-crown">👑</span>
+            <span class="fv-usp-text">講師は全員エンジニア</span>
+          </div>
+          <div class="fv-usp-item">
+            <span class="fv-usp-crown">👑</span>
+            <span class="fv-usp-text">AIセミナー多数登壇</span>
+          </div>
+          <div class="fv-usp-item">
+            <span class="fv-usp-crown">👑</span>
+            <span class="fv-usp-text">実務ベースのAI活用支援</span>
+          </div>
         </div>
-        <div class="fv-usp-item">
-          <span class="fv-usp-crown">👑</span>
-          <span class="fv-usp-text">AIセミナー多数登壇</span>
-        </div>
-        <div class="fv-usp-item">
-          <span class="fv-usp-crown">👑</span>
-          <span class="fv-usp-text">実務ベースのAI活用支援</span>
-        </div>
+        <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="btn-cta" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="8 14 11 17 16 12"/></svg>
+          無料相談を予約する
+        </a>
+        <p class="btn-cta-note btn-cta-note-light" style="margin-top:10px">完全無料・予約後のしつこい営業なし</p>
       </div>
-      <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="btn-cta" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="8 14 11 17 16 12"/></svg>
-        無料相談を予約する
-      </a>
-      <p class="btn-cta-note btn-cta-note-light" style="margin-top:10px">完全無料・予約後のしつこい営業なし</p>
+      <div class="fv-portrait fade-in">
+        <img src="assets/01_portrait.png" alt="清水 勝紀">
+      </div>
     </div>
   </section>
 
