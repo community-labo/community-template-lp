@@ -146,9 +146,12 @@
   .testi-stars{color:#F59E0B;font-size:16px;letter-spacing:2px}
   .testi-comment{font-size:13px;color:var(--ink-2);line-height:1.85;margin:0;font-weight:500;flex:1}
   .testi-author{display:flex;align-items:center;gap:12px;margin-top:4px}
-  .testi-avatar{width:40px;height:40px;border-radius:50%;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:var(--blue);flex-shrink:0}
+  .testi-avatar{width:48px;height:48px;border-radius:50%;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:var(--blue);flex-shrink:0;overflow:hidden}
+  .testi-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top}
   .testi-name{font-size:13px;font-weight:700;color:var(--ink);margin:0}
   .testi-role{font-size:11px;color:var(--muted);font-weight:500;margin:0}
+  .testi-featured{background:#fff;border:1.5px solid var(--blue);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:14px;margin-bottom:24px;box-shadow:0 4px 24px rgba(30,91,230,.1)}
+  .testi-tag{display:inline-flex;align-items:center;gap:6px;background:var(--blue-soft);color:var(--blue);font-weight:700;font-size:12px;padding:6px 14px;border-radius:999px;width:fit-content}
 
   /* Footer CTA */
   .footer-cta{background:#EAF1FE;padding:40px 64px}
@@ -816,14 +819,31 @@
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials" id="testimonials" style="display:none">
+  <section class="testimonials" id="testimonials">
     <div class="container">
-      <h2 class="section-title">お客様の声</h2>
-      <p class="section-sub">受講いただいた方々からの声をご紹介します。</p>
+      <h2 class="section-title">受講生の声</h2>
+      <p class="section-sub">実際に受講いただいた方々からの声をご紹介します。</p>
+
+      <!-- 梶屋さん Featured -->
+      <div class="testi-featured">
+        <div class="testi-stars">★★★★★</div>
+        <span class="testi-tag">🏠 民泊物件の価格調整ツールを作りました</span>
+        <p class="testi-comment">Claude Codeでホームページ制作やツール開発ができることは知っていましたが、実際に自分のPCでどう環境構築し、どうプロンプトを打ち、外部連携や公開まで進めるのかが分かっていませんでした。今回のコンサルでは、民泊運営の価格調整業務を題材に、実際の価格調整ツールを開発。これまで140件の物件を確認しながら4〜5時間かけて行っていた作業を、一瞬で実行できるレベルまで改善できました。初心者でも理解できるよう丁寧に解説しながら伴走していただけたので、学びながら実務成果まで出せたのが非常に良かったです。</p>
+        <div class="testi-author">
+          <div class="testi-avatar">
+            <img src="assets/kajiya_profile.jpg" alt="梶屋さん">
+          </div>
+          <div>
+            <p class="testi-name">梶屋 さん</p>
+            <p class="testi-role">民泊運営 経営者</p>
+          </div>
+        </div>
+      </div>
+
       <div class="testi-grid">
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
-          <p class="testi-comment">プログラミング未経験でしたが、自分の業務に直結するツールを2ヶ月で形にできました。マンツーマンなので質問しやすく、つまずいてもすぐに解決できたのが大きかったです。</p>
+          <p class="testi-comment">プログラミング未経験でしたが、自分の業務に直結するツールを3ヶ月で形にできました。マンツーマンなので質問しやすく、つまずいてもすぐに解決できたのが大きかったです。</p>
           <div class="testi-author">
             <div class="testi-avatar">T.S</div>
             <div>
