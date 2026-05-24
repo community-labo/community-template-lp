@@ -47,28 +47,6 @@ body{
 .fade-up{opacity:0;transform:translateY(20px);transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
 .fade-up.visible{opacity:1;transform:none}
 
-/* ===== Nav ===== */
-.topnav{
-  background:var(--white);
-  border-bottom:3px solid var(--orange);
-  padding:14px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  position:sticky;
-  top:0;
-  z-index:200;
-}
-.brand-text{font-size:14px;font-weight:900;color:var(--ink)}
-.nav-cta{
-  background:var(--orange);
-  color:#fff;
-  font-size:12px;
-  font-weight:700;
-  padding:9px 16px;
-  border-radius:6px;
-  font-family:inherit;
-}
 
 /* ===== Sections ===== */
 section{padding:52px 24px}
@@ -360,6 +338,13 @@ h2.section-title .accent{color:var(--orange)}
 .pain-resolve h3{font-size:17px;font-weight:900;margin-bottom:10px;line-height:1.5}
 .pain-resolve p{font-size:13px;opacity:.9;line-height:1.8;font-weight:500}
 
+/* ===== For You ===== */
+.foryou-list{display:flex;flex-direction:column;gap:18px}
+.foryou-item{display:flex;gap:14px;align-items:flex-start;font-size:15px;font-weight:700;line-height:1.6;color:var(--ink)}
+.foryou-check{width:30px;height:30px;background:var(--orange);border-radius:5px;flex-shrink:0;margin-top:3px;position:relative}
+.foryou-check::after{content:"";position:absolute;top:50%;left:50%;width:9px;height:6px;border-left:2.5px solid #fff;border-bottom:2.5px solid #fff;transform:translate(-50%,-60%) rotate(-45deg)}
+.foryou-item .hi{color:var(--orange)}
+
 /* ===== 参加特典 ===== */
 .benefit-list{display:flex;flex-direction:column;gap:14px}
 .benefit-card{
@@ -386,6 +371,19 @@ h2.section-title .accent{color:var(--orange)}
 }
 .benefit-body h3{font-size:15px;font-weight:900;margin-bottom:6px;color:var(--ink)}
 .benefit-body p{font-size:13px;color:#555;line-height:1.7;font-weight:400}
+.setup-note{
+  margin-top:20px;
+  background:#fff;
+  border:2px solid var(--orange);
+  border-radius:8px;
+  padding:18px 20px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+.setup-note-icon{font-size:22px;flex-shrink:0;margin-top:2px}
+.setup-note strong{font-size:14px;font-weight:900;color:var(--ink);display:block;margin-bottom:6px}
+.setup-note p{font-size:13px;color:#555;line-height:1.7;margin:0}
 .benefit-tag{
   display:inline-block;
   background:var(--orange);
@@ -638,11 +636,7 @@ h2.section-title .accent{color:var(--orange)}
 
 <div class="page-wrap">
 
-<!-- ===== Navigation ===== -->
-<nav class="topnav">
-  <span class="brand-text">ClaudeCode 実践セミナー</span>
-  <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="nav-cta" target="_blank" rel="noopener">無料で申し込む</a>
-</nav>
+
 
 <!-- ===== Hero ===== -->
 <section class="hero">
@@ -711,36 +705,35 @@ h2.section-title .accent{color:var(--orange)}
 
 <!-- ===== こんな方へ ===== -->
 <section id="foryou">
-  <div class="fade-up" style="text-align:center;margin-bottom:20px">
-    <span class="sec-label">FOR YOU</span>
-    <h2 class="section-title">こんなお悩みありませんか？</h2>
-    <p class="section-sub">多くのひとり社長が「同じモヤモヤ」を抱えています</p>
+  <div class="fade-up" style="text-align:center;margin-bottom:28px">
+    <h2 class="section-title" style="font-size:26px">こんな方に<br><span class="accent">おすすめです！</span></h2>
+    <p class="section-sub">ひとつでも当てはまる方は、ぜひご参加ください</p>
   </div>
-  <div class="pain-list">
-    <div class="pain-card fade-up">
-      ChatGPTやGeminiを試したけど、イマイチ業務がラクにならない
-      <span>学んだけど、結局もとの作業量に戻ってしまう</span>
+  <div class="foryou-list">
+    <div class="foryou-item fade-up">
+      <span class="foryou-check"></span>
+      <span>まわりがAIを使い始めているので、<span class="hi">自分も本格的に使いこなしたい</span></span>
     </div>
-    <div class="pain-card fade-up">
-      AIに対して毎回、結局自分で指示を出している
-      <span>AIが「勝手に動く」感覚がまったくない</span>
+    <div class="foryou-item fade-up">
+      <span class="foryou-check"></span>
+      <span>自動化・業務効率化で、<span class="hi">AIが実際にどこまでできるのか知りたい</span></span>
     </div>
-    <div class="pain-card fade-up">
-      マーケも業務効率化も全部自分でやっていて手が回らない
-      <span>人を採用する余裕もなく、消耗が続いている</span>
+    <div class="foryou-item fade-up">
+      <span class="foryou-check"></span>
+      <span>ClaudeCodeやAIエージェントという言葉をよく聞くので、<span class="hi">もっと詳しく知りたい</span></span>
     </div>
-    <div class="pain-card fade-up">
-      忙しくてAIを学ぶ時間が取れない
-      <span>勉強しても実務に活かせる気がしない</span>
+    <div class="foryou-item fade-up">
+      <span class="foryou-check"></span>
+      <span>AIを<span class="hi">一緒に仕事してくれるアシスタント</span>にしたいと本気で思っている</span>
     </div>
-    <div class="pain-card fade-up">
-      AI社員・AI自動化に興味はあるが何から始めるかわからない
-      <span>情報が多すぎて、自分に合うものが選べない</span>
+    <div class="foryou-item fade-up">
+      <span class="foryou-check"></span>
+      <span><span class="hi">プロのAI活用</span>を実際に目の当たりにしたい</span>
     </div>
-  </div>
-  <div class="pain-resolve fade-up" style="margin-top:24px">
-    <h3>その悩み、ClaudeCodeが解決します。</h3>
-    <p>ChatGPTとの決定的な違いは「AIが自律的に動く仕組みを作れること」。マーケ・業務効率化・顧客対応——ひとり社長の全業務をAIに任せる経営へ。</p>
+    <div class="foryou-item fade-up">
+      <span class="foryou-check"></span>
+      <span>どうせやるなら、<span class="hi">本当に成果が出る環境</span>で本格的に取り組みたい</span>
+    </div>
   </div>
 </section>
 
@@ -756,25 +749,32 @@ h2.section-title .accent{color:var(--orange)}
       <div class="benefit-num">1</div>
       <div class="benefit-body">
         <div class="benefit-tag">特典①</div>
-        <h3>業務棚卸しシート（PDF）プレゼント</h3>
-        <p>自社のどの業務をAI化すべきか、優先順位を整理できるオリジナルシートをお渡しします。</p>
+        <h3>ClaudeCode Skills集（PDF）</h3>
+        <p>セミナーで紹介するSkillsを一覧まとめたPDFをプレゼント。セミナー後すぐに自分の業務へ応用できます。</p>
       </div>
     </div>
     <div class="benefit-card fade-up">
       <div class="benefit-num">2</div>
       <div class="benefit-body">
         <div class="benefit-tag">特典②</div>
-        <h3>ClaudeCodeセットアップチェックリスト</h3>
-        <p>ClaudeCodeを最短で使い始めるためのチェックリストを参加者全員に配布します。</p>
+        <h3>セミナーアーカイブ動画</h3>
+        <p>当日参加できなかった方も安心。録画動画を後日お送りするので、何度でも見返して復習できます。</p>
       </div>
     </div>
     <div class="benefit-card fade-up">
       <div class="benefit-num">3</div>
       <div class="benefit-body">
-        <div class="benefit-tag" style="background:var(--ink)">特典③ 先着5名</div>
-        <h3>セミナー後30分の個別相談（先着5名）</h3>
-        <p>あなたの業務課題に合わせた個別アドバイスを無料で実施。先着5名限定です。</p>
+        <div class="benefit-tag">特典③</div>
+        <h3>ClaudeCode実践プロンプトテンプレート集</h3>
+        <p>マーケ・業務効率化ですぐ使える厳選プロンプトをまとめたシートをプレゼント。指示文をコピペするだけで即実践できます。</p>
       </div>
+    </div>
+  </div>
+  <div class="setup-note fade-up">
+    <div class="setup-note-icon">📋</div>
+    <div>
+      <strong>セミナー当日までにセットアップを完了してきてください</strong>
+      <p>お申し込み後、ClaudeCodeのセットアップ資料を別途お送りします。当日すぐに手を動かせる状態でご参加ください。</p>
     </div>
   </div>
 </section>
@@ -804,7 +804,7 @@ h2.section-title .accent{color:var(--orange)}
     </div>
   </div>
   <div class="fade-up" style="margin-top:20px">
-    <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="btn-orange" target="_blank" rel="noopener">無料体験会に申し込む</a>
+    <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="btn-orange" target="_blank" rel="noopener">今すぐ無料で申し込む</a>
     <p style="font-size:11px;color:#888;text-align:center;margin-top:10px">完全無料 / しつこい勧誘は一切なし</p>
   </div>
 </section>
@@ -884,7 +884,7 @@ h2.section-title .accent{color:var(--orange)}
 
   </div>
   <div class="fade-up" style="margin-top:28px">
-    <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="btn-orange" target="_blank" rel="noopener">無料体験会に申し込む</a>
+    <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="btn-orange" target="_blank" rel="noopener">今すぐ無料で申し込む</a>
     <p style="font-size:11px;color:#888;text-align:center;margin-top:10px">完全無料 / しつこい勧誘は一切なし</p>
   </div>
 </section>
@@ -894,7 +894,7 @@ h2.section-title .accent{color:var(--orange)}
   <div class="fade-up" style="text-align:center;margin-bottom:24px">
     <span class="sec-label">INSTRUCTOR</span>
     <h2 class="section-title">講師紹介</h2>
-    <p class="section-sub">現役エンジニアが、経営者目線で実践的にサポートします</p>
+    <p class="section-sub">ClaudeCode専門家が、リアルな実践ノウハウをそのまま公開します</p>
   </div>
   <div class="inst-card fade-up">
     <div class="inst-head">
@@ -1008,9 +1008,9 @@ h2.section-title .accent{color:var(--orange)}
 <!-- ===== Final CTA ===== -->
 <section class="final-cta">
   <div class="fade-up">
-    <h2>マーケ&amp;業務効率化を、<br>ClaudeCodeで全部やる。<br>まずは無料で体験してください。</h2>
-    <p>ChatGPT・Geminiで感じていたモヤモヤが、ClaudeCodeで解決する理由をこのセミナーで体験してください。</p>
-    <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="btn-green" target="_blank" rel="noopener">今すぐセミナーに申し込む</a>
+    <h2>60分で、全部見せます。<br>AIと働く経営の<br>最短ルートを踏み出しませんか？</h2>
+    <p>「知っているけど使いこなせていない」を卒業して、本気でAIと働く経営へ。本気なあなたをお待ちしております。</p>
+    <a href="https://app.aitemasu.me/u/ma1998042/requestcopy" class="btn-green" target="_blank" rel="noopener">今すぐ無料で申し込む</a>
     <p class="final-note">完全無料・しつこい勧誘は一切なし</p>
   </div>
 </section>
