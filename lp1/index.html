@@ -154,9 +154,10 @@ h2.section-title .accent{color:var(--orange)}
 /* ===== Hero ===== */
 .hero{
   background:var(--orange);
-  padding:40px 24px 0;
+  padding:40px 0 0;
   overflow:hidden;
 }
+.hero-pad{padding:0 24px}
 .hero-label{
   display:block;
   background:#fff;
@@ -170,12 +171,13 @@ h2.section-title .accent{color:var(--orange)}
   text-align:center;
 }
 .hero-title{
-  font-size:clamp(40px,11vw,52px);
+  font-size:clamp(52px,15vw,80px);
   font-weight:900;
   color:#fff;
-  line-height:1.2;
-  margin:0 -8px 20px;
-  letter-spacing:-.02em;
+  line-height:1.1;
+  padding:4px 14px 0;
+  margin:0 0 20px;
+  letter-spacing:-.03em;
 }
 .hero-sub{
   font-size:14px;
@@ -641,12 +643,14 @@ h2.section-title .accent{color:var(--orange)}
 
 <!-- ===== Hero ===== -->
 <section class="hero">
-  <div class="fade-up">
+  <div class="hero-pad fade-up">
     <div class="hero-label">ひとり社長のためのClaudeCode実践セミナー</div>
-    <h1 class="hero-title">
-      マーケ&amp;業務効率化を<br>
-      ClaudeCodeで<br>全部やる。
-    </h1>
+  </div>
+  <h1 class="hero-title fade-up">
+    マーケ&amp;業務効率化を<br>
+    ClaudeCodeで<br>全部やる。
+  </h1>
+  <div class="hero-pad fade-up">
     <p class="hero-sub">
       ひとり社長の最大の問題は「自分の時間が増えないこと」。<br>
       ChatGPTで毎回指示するたびに消耗していませんか？<br>
