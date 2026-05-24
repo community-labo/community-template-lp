@@ -161,14 +161,26 @@ h2.section-title .accent{color:var(--orange)}
 .hero-label{
   display:block;
   background:#fff;
-  color:var(--orange);
-  font-size:16px;
-  font-weight:900;
-  padding:12px 20px;
-  border-radius:6px;
+  border-radius:8px;
+  padding:14px 20px;
   margin-bottom:24px;
-  letter-spacing:.04em;
   text-align:center;
+}
+.hero-label-sub{
+  display:block;
+  font-size:11px;
+  font-weight:700;
+  color:#aaa;
+  letter-spacing:.1em;
+  margin-bottom:4px;
+}
+.hero-label-main{
+  display:block;
+  font-size:22px;
+  font-weight:900;
+  color:var(--orange);
+  letter-spacing:.02em;
+  line-height:1.2;
 }
 .hero-title{
   font-size:clamp(32px,9vw,48px);
@@ -648,7 +660,10 @@ h2.section-title .accent{color:var(--orange)}
 <!-- ===== Hero ===== -->
 <section class="hero">
   <div class="hero-pad fade-up">
-    <div class="hero-label">ひとり社長のためのClaudeCode実践セミナー</div>
+    <div class="hero-label">
+      <span class="hero-label-sub">ひとり社長のための</span>
+      <span class="hero-label-main">ClaudeCode実践セミナー</span>
+    </div>
   </div>
   <h1 class="hero-title fade-up">
     マーケ&amp;業務効率化を<br>
