@@ -1187,6 +1187,22 @@ document.querySelectorAll('.faq-q').forEach(q => {
     if (!isOpen) item.classList.add('open');
   });
 });
+
+// 過去の日程を自動削除
+(function() {
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  document.querySelectorAll('.sdate').forEach(el => {
+    const text = (el.querySelector('.sdate-date') || {}).textContent || '';
+    const m = text.match(/(\d+)月(\d+)日/);
+    if (!m) return;
+    const month = parseInt(m[1]) - 1;
+    const day = parseInt(m[2]);
+    const year = month < today.getMonth() ? today.getFullYear() + 1 : today.getFullYear();
+    const date = new Date(year, month, day);
+    if (date < today) el.remove();
+  });
+})();
 </script>
 </body>
 </html>
