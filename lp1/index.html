@@ -617,6 +617,35 @@ h2.section-title .accent{color:var(--orange)}
 }
 .voice-info strong{display:block;font-size:13px;color:var(--ink);font-weight:700}
 .voice-info span{font-size:11px;color:#777;font-weight:400}
+.voice-score{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background:#fff;
+  border:2px solid var(--orange);
+  border-radius:12px;
+  padding:18px 24px;
+  margin-bottom:20px;
+  text-align:center;
+}
+.voice-score-num{
+  font-size:52px;
+  font-weight:900;
+  color:var(--orange);
+  line-height:1;
+  letter-spacing:-.02em;
+}
+.voice-score-unit{
+  font-size:22px;
+  font-weight:700;
+  color:var(--orange);
+}
+.voice-score-label{
+  font-size:13px;
+  font-weight:700;
+  color:#555;
+  margin-top:6px;
+}
 .voice-disclaimer{font-size:11px;color:#888;text-align:center;margin-top:16px}
 
 /* ===== FAQ ===== */
@@ -978,6 +1007,10 @@ h2.section-title .accent{color:var(--orange)}
     <span class="sec-label">VOICE</span>
     <h2 class="section-title">参加者の<span class="accent">声</span></h2>
     <p class="section-sub">実際にセミナーへ参加した方々の感想です</p>
+  </div>
+  <div class="voice-score fade-up">
+    <div class="voice-score-num">9.0<span class="voice-score-unit">/10</span></div>
+    <div class="voice-score-label">参加者満足度（平均）</div>
   </div>
   <div class="voice-list">
     <div class="voice-card fade-up">
