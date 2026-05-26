@@ -21,7 +21,7 @@ const LP_CONFIG = [
   {
     name: 'lp2',
     peatixUrl: 'https://peatix.com/event/5022847/view',
-    htmlPath: resolve(ROOT, 'lp1/lp2/index.html'),
+    htmlPath: resolve(ROOT, 'lp2/index.html'),
   },
 ];
 
