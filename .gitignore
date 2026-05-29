@@ -1,1 +1,15 @@
 node_modules/
+
+# Local environment / generated files
+.env
+.env.*
+.wrangler/
+dist/
+coverage/
+playwright-report/
+test-results/
+*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

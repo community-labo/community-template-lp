@@ -1,27 +1,27 @@
 {
-  "name": "claude-code-lp",
+  "name": "community-template-lp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "AIサロン向けの静的ランディングページ",
+  "type": "module",
   "scripts": {
     "sync-peatix": "node scripts/fetch-peatix-dates.mjs",
-    "sync-peatix:dry": "node scripts/fetch-peatix-dates.mjs --dry-run",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sync-peatix:dry": "node scripts/fetch-peatix-dates.mjs --dry-run"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shimizu1111/claude-code-lp.git"
+    "url": "git+https://github.com/community-labo/community-template-lp.git"
   },
-  "keywords": [],
+  "keywords": [
+    "landing-page",
+    "community",
+    "ai-salon"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/Shimizu1111/claude-code-lp/issues"
+    "url": "https://github.com/community-labo/community-template-lp/issues"
   },
-  "homepage": "https://github.com/Shimizu1111/claude-code-lp#readme",
+  "homepage": "https://github.com/community-labo/community-template-lp#readme",
   "dependencies": {
     "playwright": "^1.60.0"
   }
