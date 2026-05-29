@@ -204,7 +204,11 @@
       margin-left: 2px;
     }
     .hd-btn:hover { background: var(--c-main); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,83,230,.45); }
-    @media (max-width: 900px) { .hd-nav { display: none; } }
+    @media (max-width: 900px) {
+      .hd-inner { justify-content: space-between; }
+      .hd-nav { display: none; }
+      .hd-btn { margin-left: auto; }
+    }
     @media (max-width: 599px) {
       .hd-inner {
         justify-content: space-between;
