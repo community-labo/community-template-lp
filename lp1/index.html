@@ -18,9 +18,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'G-DV0M4WXYDV');
 </script>
-<title>〇〇サロン｜コミュニティ入会ページ</title>
+<title>AIサロン｜コミュニティ入会ページ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="共通の興味をきっかけに、価値観の合う仲間とつながる〇〇サロンの入会ページです。">
+<meta name="description" content="AIをきっかけに、仕事と暮らしをアップデートするAIサロンの入会ページです。">
 <meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +34,9 @@ a{text-decoration:none}
 
 /* ===== Color Tokens ===== */
 :root{
-  --orange:#1E88E5;
-  --orange-dark:#1565C0;
-  --orange-soft:#E3F2FD;
+  --orange:#0053E6;
+  --orange-dark:#003FB3;
+  --orange-soft:#E0EAFF;
   --ink:#111111;
   --white:#ffffff;
   --green-cta:#3DB851;
@@ -49,8 +49,67 @@ body{
   color:var(--ink);
   background:#ffffff;
   -webkit-font-smoothing:antialiased;
-  padding-bottom:80px;
+  padding:68px 0 80px;
 }
+
+/* ===== Header ===== */
+.site-header{
+  position:fixed;
+  inset:0 0 auto;
+  z-index:1000;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(0,83,230,.1);
+}
+.site-inner{
+  max-width:1200px;
+  margin:0 auto;
+  padding:14px 40px;
+  display:flex;
+  align-items:center;
+  gap:32px;
+}
+.site-logo{
+  font-size:20px;
+  font-weight:900;
+  color:#0D2B45;
+  letter-spacing:.03em;
+  flex-shrink:0;
+}
+.site-logo span{color:var(--orange)}
+.site-nav{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:28px;
+  flex:1;
+}
+.site-nav a{
+  color:#374151;
+  font-size:13px;
+  font-weight:500;
+  white-space:nowrap;
+}
+.site-nav a:hover{color:var(--orange)}
+.site-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:15px 32px;
+  background:var(--orange);
+  color:#fff;
+  border-radius:999px;
+  font-size:15px;
+  font-weight:700;
+  line-height:1;
+  white-space:nowrap;
+  box-shadow:0 4px 20px rgba(0,83,230,.35);
+}
+.site-btn::after{content:"→";font-size:16px}
+@media (max-width:900px){.site-nav{display:none}}
+@media (max-width:640px){body{padding-top:61px}.site-inner{padding:12px 20px}.site-btn{padding:13px 20px;font-size:13px}}
 
 /* ===== Page Wrapper（540px中央寄せ） ===== */
 .page-wrap{
@@ -731,6 +790,7 @@ h2.section-title .accent{color:var(--orange)}
 }
 .footer-links a{font-size:11px;color:rgba(255,255,255,.5);font-weight:400}
 .footer-copy{font-size:11px;color:rgba(255,255,255,.3)}
+.footer-copy a{color:inherit}
 </style>
 </head>
 <body>
@@ -739,8 +799,21 @@ h2.section-title .accent{color:var(--orange)}
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<header class="site-header">
+  <div class="site-inner">
+    <a href="../index.html#top" class="site-logo">AI<span>サロン</span></a>
+    <nav class="site-nav" aria-label="グローバルナビゲーション">
+      <a href="../index.html#about">AIサロンとは</a>
+      <a href="../index.html#activities">活動内容</a>
+      <a href="../index.html#profile">代表挨拶</a>
+      <a href="../index.html#faq">よくある質問</a>
+    </nav>
+    <a href="https://stripe.com/en-jp" class="site-btn" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
+  </div>
+</header>
+
 <!-- ===== Sticky CTA ===== -->
-<a href="#" class="sticky-cta">
+<a href="https://stripe.com/en-jp" class="sticky-cta" target="_blank" rel="noopener noreferrer">
   今すぐ入会する
   <span class="arrow"></span>
 </a>
@@ -754,7 +827,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="hero-pad fade-up">
     <div class="hero-label">
       <span class="hero-label-sub">共通の興味でつながる</span>
-      <span class="hero-label-main">〇〇サロン入会案内</span>
+      <span class="hero-label-main">AIサロン入会案内</span>
     </div>
   </div>
   <h1 class="hero-title fade-up">
@@ -763,7 +836,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </h1>
   <div class="hero-pad fade-up">
     <p class="hero-sub">
-      〇〇サロンは、共通の興味を持つ人が安心して集まれるコミュニティです。<br>
+      AIサロンは、共通の興味を持つ人が安心して集まれるコミュニティです。<br>
       営業や勧誘を目的としない、自然なつながりを大切にしています。<br>
       初めての方も参加しやすい場づくりを心がけています。
     </p>
@@ -933,7 +1006,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   <div class="fade-up" style="margin-top:20px">
-    <a href="#" class="btn-orange">今すぐ入会する</a>
+    <a href="https://stripe.com/en-jp" class="btn-orange" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
   </div>
 </section>
 
@@ -949,11 +1022,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="chapter-item fade-up">
       <div class="chapter-head">
         <span class="ch-num">前半 60分</span>
-        <span class="ch-title-head">〇〇サロンとは何か</span>
+        <span class="ch-title-head">AIサロンとは何か</span>
       </div>
       <div class="chapter-body">
         <h3>安心して参加できるコミュニティの考え方</h3>
-        <p>〇〇サロンが大切にしている価値観や、参加者同士が自然につながるためのルールを丁寧にご案内します。</p>
+        <p>AIサロンが大切にしている価値観や、参加者同士が自然につながるためのルールを丁寧にご案内します。</p>
         <ul class="chapter-points">
           <li>コミュニティの目的と雰囲気</li>
           <li>安心して交流するためのルール</li>
@@ -982,7 +1055,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
   <div class="fade-up" style="margin-top:28px">
-    <a href="#" class="btn-orange">今すぐ入会する</a>
+    <a href="https://stripe.com/en-jp" class="btn-orange" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
   </div>
 </section>
 
@@ -996,7 +1069,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="inst-card fade-up">
     <div class="inst-head">
       <div class="inst-head-info">
-        <div class="inst-role">〇〇サロン代表</div>
+        <div class="inst-role">AIサロン代表</div>
         <div class="inst-name">山田 太郎</div>
         <div class="inst-yomi">Taro Yamada</div>
       </div>
@@ -1008,7 +1081,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="inst-tag">勧誘禁止の安心設計</span>
     </div>
     <div class="inst-desc">
-      〇〇サロンでは、共通の興味をきっかけに自然な会話が生まれる場づくりを大切にしています。<br><br>
+      AIサロンでは、共通の興味をきっかけに自然な会話が生まれる場づくりを大切にしています。<br><br>
       初参加の方でも入りやすいよう、営業・勧誘を目的とした参加は禁止し、安心して交流できるルールを整えています。<br><br>
       代表として、参加者一人ひとりが無理なく関われるコミュニティ運営を心がけています。
     </div>
@@ -1086,7 +1159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="fade-up">
     <h2>共通の興味から、<br>自然なつながりを。</h2>
     <p>安心して参加できるコミュニティで、価値観の合う仲間と出会ってみませんか。まずは入会ページからお気軽にお進みください。</p>
-    <a href="#" class="btn-green">今すぐ入会する</a>
+    <a href="https://stripe.com/en-jp" class="btn-green" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
   </div>
 </section>
 
@@ -1154,7 +1227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="../tokushoho.html">特定商取引法に基づく表記</a>
 
   </div>
-  <p class="footer-copy">© 2026 〇〇サロン</p>
+  <p class="footer-copy">© 2026 <a href="../index.html#top">AIサロン</a></p>
 </footer>
 
 </div><!-- /page-wrap -->

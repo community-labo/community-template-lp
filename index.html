@@ -1,26 +1,26 @@
 <html lang="ja"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>〇〇サロン｜共通の興味でつながる安心コミュニティ</title>
-  <meta name="description" content="〇〇サロンは、共通の興味をきっかけに価値観の合う仲間とつながれるコミュニティです。会費無料・勧誘禁止で、初参加や一人参加でも安心して交流できます。">
-  <meta name="keywords" content="〇〇サロン,コミュニティ,サロン,交流会,オフ会,会費無料,勧誘禁止,一人参加歓迎">
+  <title>AIサロン｜共通の興味でつながる安心コミュニティ</title>
+  <meta name="description" content="AIサロンは、共通の興味をきっかけに価値観の合う仲間とつながれる月額制コミュニティです。月額2,980円・勧誘禁止で、初参加や一人参加でも安心して交流できます。">
+  <meta name="keywords" content="AIサロン,コミュニティ,サロン,交流会,オフ会,月額制,月額2,980円,勧誘禁止,一人参加歓迎">
   <meta name="robots" content="index,follow">
   <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://example.com/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:site_name" content="〇〇サロン">
-  <meta property="og:title" content="〇〇サロン｜共通の興味でつながる安心コミュニティ">
-  <meta property="og:description" content="共通の興味をきっかけに、価値観の合う仲間とつながれるコミュニティ。会費無料・勧誘禁止で、初参加でも安心です。">
+  <meta property="og:site_name" content="AIサロン">
+  <meta property="og:title" content="AIサロン｜共通の興味でつながる安心コミュニティ">
+  <meta property="og:description" content="共通の興味をきっかけに、価値観の合う仲間とつながれる月額制コミュニティ。月額2,980円・勧誘禁止で、初参加でも安心です。">
   <meta property="og:url" content="https://example.com/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="〇〇サロン｜共通の興味でつながる安心コミュニティ">
-  <meta name="twitter:description" content="会費無料・勧誘禁止。共通の興味で自然につながれるコミュニティです。">
+  <meta name="twitter:title" content="AIサロン｜共通の興味でつながる安心コミュニティ">
+  <meta name="twitter:description" content="月額2,980円・勧誘禁止。共通の興味で自然につながれるコミュニティです。">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "〇〇サロン",
+    "name": "AIサロン",
     "url": "https://example.com/",
     "description": "共通の興味をきっかけに価値観の合う仲間とつながれるコミュニティです。",
     "sameAs": []
@@ -30,10 +30,10 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "〇〇サロン",
+    "name": "AIサロン",
     "url": "https://example.com/",
     "inLanguage": "ja",
-    "description": "会費無料・勧誘禁止で、初参加でも安心して交流できるコミュニティです。"
+    "description": "月額2,980円・勧誘禁止で、初参加でも安心して交流できるコミュニティです。"
   }
   </script>
 
@@ -48,10 +48,10 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --c-main:    #1E88E5;
-      --c-main-d:  #1565C0;
-      --c-main-l:  #42A5F5;
-      --c-sub:     #E3F2FD;
+      --c-main:    #0053E6;
+      --c-main-d:  #003FB3;
+      --c-main-l:  #3F8DFF;
+      --c-sub:     #E0EAFF;
       --c-accent:  #0D2B45;
       --c-bg:      #FFFFFF;
       --c-bg-l:    #F7FBFF;
@@ -142,7 +142,7 @@
       background: rgba(255,255,255,.96);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(30,136,229,.1);
+      border-bottom: 1px solid rgba(0,83,230,.1);
     }
     .hd-inner {
       max-width: var(--max-w-wide);
@@ -158,8 +158,9 @@
       color: #0D2B45;
       letter-spacing: .03em;
       flex-shrink: 0;
+      text-decoration: none;
     }
-    .hd-logo span { color: #1E88E5; }
+    .hd-logo span { color: var(--c-main); }
     .hd-nav {
       display: flex;
       align-items: center;
@@ -174,7 +175,7 @@
       white-space: nowrap;
       transition: color .2s;
     }
-    .hd-nav-link:hover { color: #1E88E5; }
+    .hd-nav-link:hover { color: var(--c-main); }
     .hd-btn {
       display: inline-flex;
       align-items: center;
@@ -183,7 +184,7 @@
       min-width: auto;
       min-height: auto;
       padding: 15px 32px;
-      background: #1E88E5;
+      background: var(--c-main);
       color: #fff;
       border-radius: 999px;
       font-size: 15px;
@@ -193,7 +194,7 @@
       transition: background .2s, transform .2s, box-shadow .2s;
       white-space: nowrap;
       flex-shrink: 0;
-      box-shadow: 0 4px 20px rgba(30,136,229,.35);
+      box-shadow: 0 4px 20px rgba(0,83,230,.35);
     }
     .hd-btn::after {
       content: "→";
@@ -202,7 +203,7 @@
       line-height: 1;
       margin-left: 2px;
     }
-    .hd-btn:hover { background: #1E88E5; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(30,136,229,.45); }
+    .hd-btn:hover { background: var(--c-main); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,83,230,.45); }
     @media (max-width: 900px) { .hd-nav { display: none; } }
     @media (max-width: 599px) { .hd-inner { padding: 12px 20px; } }
 
@@ -223,7 +224,7 @@
       right: -120px;
       width: 520px;
       height: 520px;
-      background: radial-gradient(circle, rgba(30,136,229,.1) 0%, transparent 68%);
+      background: radial-gradient(circle, rgba(0,83,230,.1) 0%, transparent 68%);
       border-radius: 50%;
       pointer-events: none;
     }
@@ -234,7 +235,7 @@
       left: -80px;
       width: 380px;
       height: 380px;
-      background: radial-gradient(circle, rgba(30,136,229,.06) 0%, transparent 68%);
+      background: radial-gradient(circle, rgba(0,83,230,.06) 0%, transparent 68%);
       border-radius: 50%;
       pointer-events: none;
     }
@@ -263,13 +264,13 @@
       display: block;
       width: 28px;
       height: 1px;
-      background: #1E88E5;
+      background: var(--c-main);
       flex-shrink: 0;
     }
     .hero-eyebrow-text {
       font-size: 13px;
       font-style: italic;
-      color: #1E88E5;
+      color: var(--c-main);
       letter-spacing: .1em;
       font-family: Georgia, 'Times New Roman', serif;
     }
@@ -283,7 +284,7 @@
     }
     .hero-h1 em {
       font-style: normal;
-      color: #1E88E5;
+      color: var(--c-main);
     }
     .hero-sub {
       font-size: 15px;
@@ -304,17 +305,17 @@
       align-items: center;
       gap: 8px;
       padding: 15px 32px;
-      background: #1E88E5;
+      background: var(--c-main);
       color: #fff;
       border-radius: 50px;
       font-size: 15px;
       font-weight: 700;
-      box-shadow: 0 4px 20px rgba(30,136,229,.35);
+      box-shadow: 0 4px 20px rgba(0,83,230,.35);
       transition: transform .25s, box-shadow .25s;
     }
     .hero-btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(30,136,229,.45);
+      box-shadow: 0 8px 32px rgba(0,83,230,.45);
     }
     .btn-w {
       display: inline-flex;
@@ -322,7 +323,7 @@
       gap: 10px;
       padding: 16px 36px;
       background: #fff;
-      color: #1E88E5;
+      color: var(--c-main);
       border-radius: 50px;
       font-size: 16px;
       font-weight: 700;
@@ -336,15 +337,15 @@
       align-items: center;
       gap: 8px;
       padding: 14px 28px;
-      border: 1.5px solid #1E88E5;
-      color: #1E88E5;
+      border: 1.5px solid var(--c-main);
+      color: var(--c-main);
       border-radius: 50px;
       font-size: 15px;
       font-weight: 700;
       background: transparent;
       transition: background .2s;
     }
-    .hero-btn-ghost:hover { background: rgba(30,136,229,.08); }
+    .hero-btn-ghost:hover { background: rgba(0,83,230,.08); }
     .hero-tagline {
       font-size: 13px;
       font-style: italic;
@@ -377,7 +378,7 @@
       position: absolute;
       width: 140px; height: 140px;
       border-radius: 50%;
-      background: rgba(30,136,229,.14);
+      background: rgba(0,83,230,.14);
       top: -18px;
       right: -18px;
       z-index: 1;
@@ -386,7 +387,7 @@
       position: absolute;
       width: 260px; height: 260px;
       border-radius: 50%;
-      border: 1.5px solid rgba(30,136,229,.18);
+      border: 1.5px solid rgba(0,83,230,.18);
       bottom: -55px;
       right: -65px;
       z-index: 1;
@@ -400,7 +401,7 @@
       flex-direction: column;
       align-items: center;
       gap: 8px;
-      color: rgba(30,136,229,.5);
+      color: rgba(0,83,230,.5);
       font-size: 10px;
       letter-spacing: .15em;
       z-index: 10;
@@ -408,7 +409,7 @@
     .scroll-line {
       width: 1px;
       height: 36px;
-      background: linear-gradient(180deg, rgba(30,136,229,.6), transparent);
+      background: linear-gradient(180deg, rgba(0,83,230,.6), transparent);
       animation: scrollAni 2.2s ease-in-out infinite;
     }
     @keyframes scrollAni {
@@ -425,7 +426,7 @@
        MARQUEE BAR
     ============================================================ */
     .trust-bar {
-      background: var(--c-accent);
+      background: var(--c-main);
       padding: 16px 0;
       overflow: hidden;
     }
@@ -446,14 +447,14 @@
       align-items: center;
       gap: 10px;
       padding: 0 32px;
-      color: rgba(255,255,255,.85);
+      color: rgba(255,255,255,.9);
       font-size: 14px;
       font-weight: 700;
       white-space: nowrap;
       letter-spacing: .05em;
     }
     .marquee-sep {
-      color: rgba(255,255,255,.2);
+      color: rgba(255,255,255,.25);
       font-size: 18px;
       line-height: 1;
     }
@@ -489,7 +490,7 @@
 
     .feat-card {
       background: var(--c-bg-l);
-      border: 1px solid rgba(30,136,229,.1);
+      border: 1px solid rgba(0,83,230,.1);
       border-radius: var(--radius-card);
       padding: 26px 20px;
       text-align: center;
@@ -497,12 +498,31 @@
     }
     .feat-card:hover {
       border-color: var(--c-main);
-      box-shadow: 0 6px 24px rgba(30,136,229,.12);
+      box-shadow: 0 6px 24px rgba(0,83,230,.12);
       transform: translateY(-3px);
+    }
+    .feat-visual {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      margin: -26px -20px 24px;
+      border-radius: var(--radius-card) var(--radius-card) 14px 14px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--c-main) 0%, var(--c-main-l) 100%);
+    }
+    .feat-visual::before {
+      content: 'Image';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .08em;
     }
     .feat-icon {
       width: 52px; height: 52px;
-      background: linear-gradient(135deg, var(--c-sub), rgba(30,136,229,.15));
+      background: linear-gradient(135deg, var(--c-sub), rgba(0,83,230,.15));
       border-radius: 14px;
       display: flex;
       align-items: center;
@@ -524,8 +544,9 @@
     .activities { background: var(--c-bg-l); }
 
     .act-grid {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 14px;
     }
 
@@ -537,11 +558,12 @@
       display: flex;
       align-items: flex-start;
       gap: 18px;
+      width: 100%;
       transition: border-color .25s, box-shadow .25s, transform .25s;
     }
     .act-card:hover {
       border-color: var(--c-main);
-      box-shadow: 0 4px 20px rgba(30,136,229,.1);
+      box-shadow: 0 4px 20px rgba(0,83,230,.1);
       transform: translateY(-2px);
     }
     .act-icon-wrap {
@@ -553,7 +575,9 @@
       align-items: center;
       justify-content: center;
       font-size: 22px;
-      box-shadow: 0 4px 12px rgba(30,136,229,.3);
+      font-weight: 900;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,83,230,.3);
     }
     .act-title {
       font-size: 16px;
@@ -562,6 +586,64 @@
       margin-bottom: 5px;
     }
     .act-desc { font-size: 13px; color: var(--c-text-s); line-height: 1.75; }
+
+    /* ============================================================
+       PARTICIPANT COMMENTS
+    ============================================================ */
+    .comments { background: var(--c-bg); }
+
+    .comment-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      list-style: none;
+    }
+    .comment-item {
+      background: var(--c-bg-l);
+      border: 1px solid rgba(0,83,230,.1);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color .25s, box-shadow .25s, transform .25s;
+    }
+    .comment-item:hover {
+      border-color: rgba(0,83,230,.25);
+      box-shadow: 0 6px 24px rgba(0,83,230,.12);
+      transform: translateY(-2px);
+    }
+    .comment-photo {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background:
+        radial-gradient(circle at 50% 36%, rgba(255,255,255,.95) 0 15%, transparent 16%),
+        radial-gradient(ellipse at 50% 78%, rgba(255,255,255,.9) 0 24%, transparent 25%),
+        linear-gradient(135deg, rgba(0,83,230,.9), rgba(63,141,255,.72));
+    }
+    .comment-body {
+      padding: 24px 22px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+    .comment-text {
+      font-size: 15px;
+      line-height: 1.9;
+      color: var(--c-text);
+      margin-bottom: 12px;
+    }
+    .comment-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--c-accent);
+      margin-bottom: 10px;
+    }
+    .comment-meta {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--c-main);
+      margin-top: auto;
+    }
 
     /* ============================================================
        PAST EVENTS
@@ -583,12 +665,12 @@
       display: flex;
       flex-direction: column;
       width: 320px;
-      box-shadow: 0 2px 16px rgba(30,136,229,.07);
+      box-shadow: 0 2px 16px rgba(0,83,230,.07);
       transition: border-color .25s, box-shadow .25s, transform .25s;
     }
     .ev-card:hover {
       border-color: var(--c-main);
-      box-shadow: 0 8px 28px rgba(30,136,229,.14);
+      box-shadow: 0 8px 28px rgba(0,83,230,.14);
       transform: translateY(-4px);
     }
     .ev-img {
@@ -621,21 +703,19 @@
       align-items: center;
       gap: 6px;
     }
-    .ev-datetime::before { content: '📅'; font-size: 13px; }
-
     /* ============================================================
        REQUIREMENTS
     ============================================================ */
     .requirements {
       position: relative;
       overflow: hidden;
-      background: linear-gradient(145deg, #071c30 0%, #0e3060 35%, #1565C0 65%, #1E88E5 100%);
+      background: linear-gradient(145deg, #071c30 0%, #0e3060 35%, var(--c-main-d) 65%, var(--c-main) 100%);
     }
     .requirements::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 70% 55% at 50% 100%, rgba(66,165,245,.22) 0%, transparent 65%);
+      background: radial-gradient(ellipse 70% 55% at 50% 100%, rgba(63,141,255,.22) 0%, transparent 65%);
       pointer-events: none;
     }
     .req-deco {
@@ -662,8 +742,8 @@
     }
     .req-main em {
       font-style: normal;
-      color: #90CAF9;
-      border-bottom: 2px solid rgba(144,202,249,.45);
+      color: #FFD84D;
+      border-bottom: 2px solid rgba(255,216,77,.55);
       padding-bottom: 2px;
     }
 
@@ -691,18 +771,24 @@
       border-radius: 24px;
       padding: 44px 36px;
       text-align: center;
-      box-shadow: 0 4px 24px rgba(30,136,229,.07);
+      box-shadow: 0 4px 24px rgba(0,83,230,.07);
     }
     .prof-avatar {
       width: 180px; height: 180px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--c-sub), rgba(30,136,229,.2));
-      border: 3px solid rgba(30,136,229,.2);
+      background: linear-gradient(135deg, var(--c-sub), rgba(0,83,230,.2));
+      border: 3px solid rgba(0,83,230,.2);
       margin: 0 auto 24px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 44px;
+      overflow: hidden;
+    }
+    .prof-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .prof-name {
       font-size: 24px;
@@ -741,7 +827,7 @@
     }
     .testi-card {
       background: var(--c-bg-l);
-      border: 1px solid rgba(30,136,229,.1);
+      border: 1px solid rgba(0,83,230,.1);
       border-radius: var(--radius-card);
       padding: 28px 24px;
       position: relative;
@@ -749,14 +835,14 @@
       transition: box-shadow .25s, transform .25s;
     }
     .testi-card:hover {
-      box-shadow: 0 6px 24px rgba(30,136,229,.12);
+      box-shadow: 0 6px 24px rgba(0,83,230,.12);
       transform: translateY(-2px);
     }
     .testi-quote-mark {
       position: absolute;
       top: 16px; right: 22px;
       font-size: 60px;
-      color: rgba(30,136,229,.1);
+      color: rgba(0,83,230,.1);
       font-family: Georgia, serif;
       line-height: 1;
       pointer-events: none;
@@ -815,7 +901,7 @@
       top: 56px;
       bottom: 56px;
       width: 2px;
-      background: linear-gradient(180deg, var(--c-main), rgba(30,136,229,.15));
+      background: linear-gradient(180deg, var(--c-main), rgba(0,83,230,.15));
     }
     .step { display: flex; gap: 22px; padding-bottom: 32px; }
     .step:last-child { padding-bottom: 0; }
@@ -831,7 +917,7 @@
       color: #fff;
       position: relative;
       z-index: 1;
-      box-shadow: 0 4px 14px rgba(30,136,229,.35);
+      box-shadow: 0 4px 14px rgba(0,83,230,.35);
     }
     .step-lbl  { font-size: 8px;  font-weight: 700; letter-spacing: .1em; opacity: .8; }
     .step-n    { font-size: 20px; font-weight: 900; line-height: 1; }
@@ -849,10 +935,10 @@
       border-radius: 50px;
       font-size: 17px;
       font-weight: 700;
-      box-shadow: 0 6px 28px rgba(30,136,229,.4);
+      box-shadow: 0 6px 28px rgba(0,83,230,.4);
       transition: transform .25s, box-shadow .25s;
     }
-    .btn-b:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(30,136,229,.5); }
+    .btn-b:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,83,230,.5); }
     .btn-b::after { content: '→'; }
 
     .join-cta { text-align: center; }
@@ -978,7 +1064,7 @@
        FINAL CTA
     ============================================================ */
     .final-cta {
-      background: linear-gradient(145deg, #071c30 0%, #0e3060 40%, #1E88E5 100%);
+      background: linear-gradient(145deg, #071c30 0%, #0e3060 40%, var(--c-main) 100%);
       padding: 100px 0;
       text-align: center;
       position: relative;
@@ -988,7 +1074,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(66,165,245,.2) 0%, transparent 70%);
+      background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(63,141,255,.2) 0%, transparent 70%);
       pointer-events: none;
     }
     .final-cta-inner { position: relative; z-index: 1; }
@@ -1020,6 +1106,8 @@
       color: #fff;
       letter-spacing: .03em;
       margin-bottom: 8px;
+      display: inline-block;
+      text-decoration: none;
     }
     .footer-catch { font-size: 13px; color: rgba(255,255,255,.55); }
     .footer-links {
@@ -1039,7 +1127,7 @@
     ============================================================ */
     @media (min-width: 600px) {
       .feat-grid  { grid-template-columns: repeat(3, 1fr); }
-      .act-grid   { grid-template-columns: repeat(2, 1fr); }
+      .act-card   { width: calc((100% - 14px) / 2); }
       .testi-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
@@ -1049,6 +1137,8 @@
 
     @media (min-width: 900px) {
       .feat-grid { grid-template-columns: repeat(3, 1fr); }
+      .act-card { width: calc((100% - 28px) / 3); }
+      .comment-list { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
 </head>
@@ -1057,14 +1147,14 @@
   <!-- ========== HEADER ========== -->
   <header class="hd">
     <div class="hd-inner">
-      <div class="hd-logo">〇〇<span>サロン</span></div>
+      <a href="#top" class="hd-logo">AI<span>サロン</span></a>
       <nav class="hd-nav" aria-label="グローバルナビゲーション">
-        <a href="#about" class="hd-nav-link">〇〇サロンとは</a>
+        <a href="#about" class="hd-nav-link">AIサロンとは</a>
         <a href="#activities" class="hd-nav-link">活動内容</a>
         <a href="#profile" class="hd-nav-link">代表挨拶</a>
         <a href="#faq" class="hd-nav-link">よくある質問</a>
       </nav>
-      <a href="#join" class="hd-btn">今すぐ入会する</a>
+      <a href="https://stripe.com/en-jp" class="hd-btn" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
     </div>
   </header>
 
@@ -1081,18 +1171,27 @@
             <span class="hero-eyebrow-text">community template</span>
           </div>
           <h1 class="hero-h1">
-            〇〇をきっかけに、<br>
+            AIをきっかけに、<br>
             価値観の合う仲間と<br>
             <em>つながる。</em>
           </h1>
           <p class="hero-sub">
-            共通の興味を持つ人が集まり、月1回を目安に交流イベントを開催。会費無料・勧誘禁止の、安心して参加できるコミュニティです。
+            共通の興味を持つ人が集まり、月1回を目安に交流イベントを開催。月額2,980円・勧誘禁止の、安心して参加できるコミュニティです。
           </p>
           <div class="hero-cta">
-            <a href="#join" class="hero-btn-primary">今すぐ入会する →</a>
-            <a href="#about" class="hero-btn-ghost">〇〇サロンを知る →</a>
+            <a href="https://stripe.com/en-jp" class="hero-btn-primary" target="_blank" rel="noopener noreferrer">今すぐ入会する →</a>
+            <a href="#about" class="hero-btn-ghost">AIサロンを知る →</a>
           </div>
           <p class="hero-tagline">Interest connects. Community grows.</p>
+        </div>
+
+        <!-- Right: visual content -->
+        <div class="hero-visual">
+          <div class="hero-deco-circle-sm"></div>
+          <div class="hero-deco-circle-lg"></div>
+          <div class="hero-img-frame">
+            <img src="assets/ai-salon-fv-man.png" alt="AIサロンのファーストビュー人物画像">
+          </div>
         </div>
 
       </div>
@@ -1109,28 +1208,28 @@
   <div class="trust-bar" aria-hidden="true">
     <div class="marquee-track">
       <div class="marquee-group">
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
       </div>
       <div class="marquee-group" aria-hidden="true">
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
-        <span class="marquee-item">ダミーテキスト</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
+        <span class="marquee-item">テンプレート</span><span class="marquee-sep">|</span>
       </div>
     </div>
   </div>
@@ -1141,39 +1240,29 @@
     <div class="container">
       <div class="section-header fade">
         <span class="s-label">About</span>
-        <h2 class="s-title">〇〇サロンとは？</h2>
+        <h2 class="s-title">AIサロンとは？</h2>
       </div>
 
       <p class="about-lead fade">
-        〇〇サロンは、共通の興味を持つ人が安心して集まれるコミュニティです。<br>
+        AIサロンは、共通の興味を持つ人が安心して集まれるコミュニティです。<br>
         営業や勧誘を目的とした場ではなく、同じ関心を持つ人同士が自然につながれる場を目指しています。
       </p>
 
       <div class="feat-grid">
         <div class="feat-card fade">
-          <div class="feat-icon">�</div>
+          <div class="feat-visual" aria-hidden="true"></div>
           <h3 class="feat-title">月1回のオフ会</h3>
           <p class="feat-desc">定期的にリアルで交流できる場を開催しています。</p>
         </div>
         <div class="feat-card fade">
-          <div class="feat-icon">✨</div>
-          <h3 class="feat-title">会費無料</h3>
-          <p class="feat-desc">コミュニティ会費は無料。気軽に参加できます。</p>
+          <div class="feat-visual" aria-hidden="true"></div>
+          <h3 class="feat-title">月額2,980円</h3>
+          <p class="feat-desc">月額制で気軽に参加できます。入会金・解約金は不要です。</p>
         </div>
         <div class="feat-card fade">
-          <div class="feat-icon">�</div>
+          <div class="feat-visual" aria-hidden="true"></div>
           <h3 class="feat-title">厳選されたコンテンツ</h3>
           <p class="feat-desc">専門家が選定したコンテンツや、参加者の持ち寄り情報を楽しめます。</p>
-        </div>
-        <div class="feat-card fade">
-          <div class="feat-icon">🛡️</div>
-          <h3 class="feat-title">勧誘禁止</h3>
-          <p class="feat-desc">営業・勧誘目的の参加は禁止。安心して交流できます。</p>
-        </div>
-        <div class="feat-card fade">
-          <div class="feat-icon">🤝</div>
-          <h3 class="feat-title">フリーランス・経営者中心</h3>
-          <p class="feat-desc">価値観の近い大人同士で、自然なつながりが生まれます。</p>
         </div>
       </div>
     </div>
@@ -1191,41 +1280,80 @@
 
       <div class="act-grid">
         <div class="act-card fade">
-          <div class="act-icon-wrap">�</div>
+          <div class="act-icon-wrap">1</div>
           <div>
             <h3 class="act-title">オフ会イベント</h3>
             <p class="act-desc">月1回を目安に、少人数で交流するオフ会を開催。</p>
           </div>
         </div>
         <div class="act-card fade">
-          <div class="act-icon-wrap">🔍</div>
+          <div class="act-icon-wrap">2</div>
           <div>
             <h3 class="act-title">コンテンツ体験</h3>
             <p class="act-desc">季節の情報や厳選されたコンテンツを体験。</p>
           </div>
         </div>
         <div class="act-card fade">
-          <div class="act-icon-wrap">�</div>
+          <div class="act-icon-wrap">3</div>
           <div>
             <h3 class="act-title">メンバー発表会</h3>
             <p class="act-desc">参加者がおすすめのコンテンツを持ち寄り、背景を共有。</p>
           </div>
         </div>
         <div class="act-card fade">
-          <div class="act-icon-wrap">💬</div>
+          <div class="act-icon-wrap">4</div>
           <div>
             <h3 class="act-title">情報交換</h3>
             <p class="act-desc">おすすめのコンテンツやイベント、関連情報などを共有。</p>
           </div>
         </div>
         <div class="act-card fade">
-          <div class="act-icon-wrap">🌿</div>
+          <div class="act-icon-wrap">5</div>
           <div>
             <h3 class="act-title">コミュニティ交流</h3>
             <p class="act-desc">イベント前後もゆるくつながれる交流の場を用意。</p>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <!-- ========== PARTICIPANT COMMENTS ========== -->
+  <section class="comments" id="comments">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="s-label">Comments</span>
+        <h2 class="s-title">参加者のコメント</h2>
+        <p class="s-desc">実際に参加した方から届いた感想です。</p>
+      </div>
+
+      <ul class="comment-list fade" role="list">
+        <li class="comment-item">
+          <div class="comment-photo" aria-hidden="true"></div>
+          <div class="comment-body">
+            <p class="comment-name">山田 太郎さん</p>
+            <p class="comment-text">初参加でも自然に会話へ入れて、安心して楽しめました。少人数なので距離感もちょうど良かったです。</p>
+            <p class="comment-meta">30代 / フリーランス</p>
+          </div>
+        </li>
+        <li class="comment-item">
+          <div class="comment-photo" aria-hidden="true"></div>
+          <div class="comment-body">
+            <p class="comment-name">佐藤 俊さん</p>
+            <p class="comment-text">仕事以外のつながりができて、毎月のオフ会が良いリフレッシュになっています。</p>
+            <p class="comment-meta">40代 / 経営者</p>
+          </div>
+        </li>
+        <li class="comment-item">
+          <div class="comment-photo" aria-hidden="true"></div>
+          <div class="comment-body">
+            <p class="comment-name">鈴木 美咲さん</p>
+            <p class="comment-text">勧誘がないので気軽に参加できます。価値観の近い人とゆるくつながれる雰囲気が心地良いです。</p>
+            <p class="comment-meta">30代 / 会社員</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -1244,7 +1372,7 @@
           <img src="assets/event-dummy.svg" alt="過去のイベントの様子" class="ev-img">
           <div class="ev-body">
             <span class="ev-tag">イベント</span>
-            <h3 class="ev-title">キックオフイベント</h3>
+            <h3 class="ev-title">初のオフ会を開催しました！</h3>
             <p class="ev-datetime">2026年4月22日（水）18:00 〜 22:00</p>
           </div>
         </article>
@@ -1264,14 +1392,14 @@
       </div>
 
       <p class="req-main fade">
-        参加条件は、<br>
-        <em>「〇〇に興味がある」</em>であること。
+        <em>AIに興味がある方</em>なら、<br>
+        どなたでも参加できます。
       </p>
 
       <p class="req-body fade">
-        〇〇サロンでは、<br>
+        AIサロンでは、<br>
         肩書きや職業よりも、<br>
-        「〇〇に興味がある」という共通点を大切にしています。<br><br>
+        「AIに興味がある」という共通点を大切にしています。<br><br>
         共通の興味を持つ方を中心に、<br>
         共通の興味をきっかけに自然な交流が生まれる場を目指しています。<br><br>
         詳しい知識は必要ありません。<br>
@@ -1292,14 +1420,16 @@
       </div>
 
       <div class="profile-card fade">
+        <div class="prof-avatar">
+          <img src="assets/ai-salon-profile.png" alt="山田 太郎のプロフィール写真">
+        </div>
         <h3 class="prof-name">山田 太郎</h3>
-        <p class="prof-role">〇〇サロン代表 / フリーランス</p>
+        <p class="prof-role">AIサロン代表</p>
         <div class="prof-divider" role="separator"></div>
         <p class="prof-text">
-          業界での豊富な経験を持ち、関連事業の立ち上げも経験。
-          現在はフリーランスとして活動しながら、共通の興味を持つ仲間の輪を広げる活動をしています。
+          大手企業で10年以上にわたりIT業界の現場に携わり、システム開発や業務改善、デジタル活用の支援を経験。その知見を活かし、AIをもっと身近に学べる場としてAIコミュニティを設立しました。
           <br><br>
-          〇〇サロンでは、「〇〇好きが自然につながれる場」を目指し、月1回を目安にオフ会を開催しています。
+          専門用語に苦手意識がある方や、AIを何から始めればよいかわからない非エンジニアの方にも伝わるよう、日常や仕事で使えるAI活用方法を日本一優しく解説しています。
         </p>
       </div>
     </div>
@@ -1387,11 +1517,6 @@
         <h2 class="s-title">入会方法</h2>
       </div>
 
-      <p class="join-note fade">
-        現在は紹介を中心に運営していますが、新規メンバーも<strong>少人数限定</strong>で募集しています。<br>
-        安心して参加いただくため、事前にコミュニティルールをご確認いただいています。
-      </p>
-
       <ol class="steps fade" role="list">
         <li class="step">
           <div class="step-num" aria-hidden="true">
@@ -1399,8 +1524,8 @@
             <span class="step-n">01</span>
           </div>
           <div class="step-body">
-            <h3 class="step-title">参加申請</h3>
-            <p class="step-desc">フォームから参加希望を送信してください。</p>
+            <h3 class="step-title">公式サイトにアクセス</h3>
+            <p class="step-desc">AIサロンの公式サイトにアクセスしてください。</p>
           </div>
         </li>
         <li class="step">
@@ -1409,8 +1534,8 @@
             <span class="step-n">02</span>
           </div>
           <div class="step-body">
-            <h3 class="step-title">ルール確認</h3>
-            <p class="step-desc">勧誘禁止など、コミュニティルールをご確認いただきます。</p>
+            <h3 class="step-title">入会ボタンをクリック</h3>
+            <p class="step-desc">ページ内の入会ボタンからお申し込みに進みます。</p>
           </div>
         </li>
         <li class="step">
@@ -1419,8 +1544,8 @@
             <span class="step-n">03</span>
           </div>
           <div class="step-body">
-            <h3 class="step-title">コミュニティ参加</h3>
-            <p class="step-desc">案内に沿ってコミュニティに参加します。</p>
+            <h3 class="step-title">決済</h3>
+            <p class="step-desc">月額料金のお支払い手続きを完了してください。</p>
           </div>
         </li>
         <li class="step">
@@ -1429,14 +1554,14 @@
             <span class="step-n">04</span>
           </div>
           <div class="step-body">
-            <h3 class="step-title">イベント参加</h3>
-            <p class="step-desc">月1回を目安に開催される交流イベントに参加できます。</p>
+            <h3 class="step-title">ご入会</h3>
+            <p class="step-desc">決済完了後、AIサロンのメンバーとしてご参加いただけます。</p>
           </div>
         </li>
       </ol>
 
       <div class="join-cta fade">
-        <a href="#contact" class="btn-b">今すぐ入会する</a>
+        <a href="https://stripe.com/en-jp" class="btn-b" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
         <p class="join-caution">※ 20歳未満の方はご参加いただけません</p>
       </div>
     </div>
@@ -1460,15 +1585,8 @@
         <li class="prohibit-card">
           <div class="prohibit-icon" aria-hidden="true">✕</div>
           <div>
-            <h3 class="prohibit-title">営業・勧誘目的の参加</h3>
-            <p class="prohibit-desc">ビジネスの営業や、サービス・商品への勧誘を目的とした参加はお断りしています。純粋に交流を楽しむ場として大切にしています。</p>
-          </div>
-        </li>
-        <li class="prohibit-card">
-          <div class="prohibit-icon" aria-hidden="true">✕</div>
-          <div>
-            <h3 class="prohibit-title">特定の政治・宗教活動への勧誘</h3>
-            <p class="prohibit-desc">政治的な活動や宗教的な勧誘目的での参加はお断りしています。</p>
+            <h3 class="prohibit-title">営業・加入目的の参加</h3>
+            <p class="prohibit-desc">ビジネスの営業や、サービス・商品への加入を目的とした参加はお断りしています。純粋に交流を楽しむ場として大切にしています。</p>
           </div>
         </li>
         <li class="prohibit-card">
@@ -1481,15 +1599,8 @@
         <li class="prohibit-card">
           <div class="prohibit-icon" aria-hidden="true">✕</div>
           <div>
-            <h3 class="prohibit-title">コミュニティ内情報の無断外部公開</h3>
+            <h3 class="prohibit-title">コミュニティ内部情報の無断公開</h3>
             <p class="prohibit-desc">参加者の個人情報や、コミュニティ内での会話・情報を無断で外部へ公開することは禁止しています。</p>
-          </div>
-        </li>
-        <li class="prohibit-card">
-          <div class="prohibit-icon" aria-hidden="true">✕</div>
-          <div>
-            <h3 class="prohibit-title">20歳未満の参加</h3>
-            <p class="prohibit-desc">お酒を扱うコミュニティのため、20歳未満の方はご参加いただけません。</p>
           </div>
         </li>
       </ul>
@@ -1532,7 +1643,17 @@
             <span class="faq-icon" aria-hidden="true">+</span>
           </button>
           <div class="faq-panel" role="region">
-            <p class="faq-a">コミュニティ会費は無料です。イベント時の実費は別途必要となる場合があります。</p>
+            <p class="faq-a">月額2,980円でご参加いただけます。イベント時の実費は別途必要となる場合があります。</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span class="faq-qtext">入会金・解約金は必要ですか？</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel" role="region">
+            <p class="faq-a">不要です。入会金・解約金はかからず、月額料金のみでご参加いただけます。</p>
           </div>
         </li>
 
@@ -1555,16 +1676,6 @@
             <p class="faq-a">はい。営業・勧誘目的の参加は禁止しています。安心して交流できる場づくりを大切にしています。</p>
           </div>
         </li>
-
-        <li class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span class="faq-qtext">コンテンツの持ち込みはできますか？</span>
-            <span class="faq-icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq-panel" role="region">
-            <p class="faq-a">イベント内容によっては、おすすめのコンテンツを持ち寄っていただけます。</p>
-          </div>
-        </li>
       </ul>
     </div>
   </section>
@@ -1575,11 +1686,11 @@
     <div class="container">
       <div class="final-cta-inner">
         <h2 class="final-cta-h2 fade">
-          共通の興味で、自然につながれる場。<br>
-          あなたの参加をお待ちしています。
+          AIを学び、活用する仲間とつながる。<br>
+          今日からAIを味方につけましょう。
         </h2>
         <p class="final-cta-sub fade">少人数限定募集中</p>
-        <a href="#" class="btn-w fade">今すぐ入会する</a>
+        <a href="https://stripe.com/en-jp" class="btn-w fade" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
         <p class="final-caution fade">※ 20歳未満の方はご参加いただけません</p>
       </div>
     </div>
@@ -1590,19 +1701,19 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
-        <p class="footer-logo">〇〇サロン</p>
-        <p class="footer-catch">共通の興味をきっかけに、価値観の合う仲間とつながる。</p>
+        <a href="#top" class="footer-logo">AIサロン</a>
+        <p class="footer-catch">AIを学び、活用し、仕事と暮らしをアップデートする。</p>
       </div>
 
       <nav class="footer-links" aria-label="フッターナビゲーション">
         <a href="tokushoho.html" class="footer-link">特定商取引法に基づく表記</a>
         <a href="privacy.html" class="footer-link">プライバシーポリシー</a>
         <a href="terms.html" class="footer-link">利用規約</a>
-        <a href="contact.html" class="footer-link">お問い合わせ</a>
+        <a href="mailto:info@example.com" class="footer-link">お問い合わせ</a>
       </nav>
 
       <hr class="footer-hr">
-      <p class="footer-copy">© 2026 Community All Rights Reserved.</p>
+      <p class="footer-copy">© 2026 AIサロン All Rights Reserved.</p>
     </div>
   </footer>
 

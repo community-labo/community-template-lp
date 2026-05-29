@@ -9,16 +9,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PK67KLM2');</script>
 <!-- End Google Tag Manager -->
 <meta charset="utf-8">
-<title>プライバシーポリシー | 〇〇サロン</title>
+<title>プライバシーポリシー | AIサロン</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
 <style>
 :root{
-  --blue:#1E88E5;
-  --blue-deep:#1565C0;
-  --blue-soft:#E3F2FD;
+  --blue:#0053E6;
+  --blue-deep:#003FB3;
+  --blue-soft:#E0EAFF;
   --blue-soft-2:#F7FBFF;
   --navy:#0D2B45;
   --ink:#1F2937;
@@ -28,20 +28,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   --max-w:1000px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{font-family:"Noto Sans JP",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;background:#fff;min-height:100vh;line-height:1.75}
+html,body{font-family:"Noto Sans JP",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;background:var(--blue-soft-2);min-height:100vh;line-height:1.75}
 .lp-wrap{width:100%;background:#fff;min-height:100vh}
 
 /* Header */
-.page-header{background:linear-gradient(180deg,#F7FBFF 0%,#E3F2FD 100%);padding:112px 24px 72px;text-align:center;border-bottom:1px solid rgba(30,136,229,.12)}
-.page-header .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-size:13px;font-weight:700;text-decoration:none;margin-bottom:24px}
-.page-header .back-link:hover{color:var(--blue-deep)}
+.site-header{position:fixed;inset:0 0 auto;z-index:200;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,83,230,.1)}
+.site-inner{max-width:1200px;margin:0 auto;padding:14px 40px;display:flex;align-items:center;gap:32px}
+.site-logo{font-size:20px;font-weight:900;color:var(--navy);letter-spacing:.03em;text-decoration:none;flex-shrink:0}
+.site-logo span{color:var(--blue)}
+.site-nav{display:flex;align-items:center;justify-content:flex-end;gap:28px;flex:1}
+.site-nav a{font-size:13px;font-weight:500;color:var(--ink-2);white-space:nowrap;text-decoration:none;transition:color .2s}
+.site-nav a:hover{color:var(--blue)}
+.site-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 32px;background:var(--blue);color:#fff;text-decoration:none;border-radius:999px;font-size:15px;font-weight:700;line-height:1;white-space:nowrap;box-shadow:0 4px 20px rgba(0,83,230,.35);transition:transform .2s,box-shadow .2s}
+.site-btn::after{content:"→";font-size:16px}
+.site-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,83,230,.45)}
+.page-header{background:linear-gradient(180deg,#F7FBFF 0%,#E0EAFF 100%);padding:144px 24px 72px;text-align:center;border-bottom:1px solid rgba(0,83,230,.12)}
 .page-header h1{font-size:clamp(30px,4vw,48px);font-weight:900;color:var(--navy);line-height:1.25}
 .page-header p{font-size:13px;color:var(--blue);margin-top:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
 
 /* Content */
 .content{width:100%;max-width:var(--max-w);margin:0 auto;padding:72px 24px 96px}
 .last-updated{font-size:13px;color:var(--muted);margin-bottom:36px;font-weight:500;text-align:right}
-.section-block{margin-bottom:36px;background:#fff}
+.section-block{margin-bottom:36px;background:#fff;border-radius:18px}
 .section-block:last-child{margin-bottom:0}
 h2.block-title{font-size:20px;font-weight:900;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--blue-soft);letter-spacing:.02em}
 .section-block p{font-size:15px;color:var(--ink-2);line-height:2;font-weight:500}
@@ -51,7 +59,7 @@ h2.block-title{font-size:20px;font-weight:900;color:var(--navy);margin-bottom:16
 .section-block ul li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;margin-top:8px}
 
 /* Contact box */
-.contact-box{background:var(--blue-soft-2);border:1px solid var(--line);border-radius:8px;padding:24px;margin-top:16px}
+.contact-box{background:var(--blue-soft-2);border:1px solid rgba(0,83,230,.14);border-radius:18px;padding:24px;margin-top:16px}
 .contact-box p{font-size:15px;color:var(--ink-2);line-height:1.9;font-weight:500}
 .contact-box a{color:var(--blue);text-decoration:none}
 .contact-box a:hover{text-decoration:underline}
@@ -61,7 +69,9 @@ h2.block-title{font-size:20px;font-weight:900;color:var(--navy);margin-bottom:16
 .page-footer a{color:rgba(255,255,255,.72);font-size:13px;font-weight:500;text-decoration:none;margin:0 12px}
 .page-footer a:hover{color:#fff}
 .page-footer p{font-size:12px;color:rgba(255,255,255,.35);margin-top:18px;font-weight:500}
-@media (max-width: 640px){.page-header{padding:88px 20px 56px}.content{padding:48px 20px 72px}.page-footer a{display:inline-block;margin:6px 10px}}
+.page-footer p a{font-size:inherit;color:inherit;margin:0}
+@media (max-width: 900px){.site-nav{display:none}}
+@media (max-width: 640px){.site-inner{padding:12px 20px}.site-btn{padding:13px 20px;font-size:13px}.page-header{padding:112px 20px 56px}.content{padding:48px 20px 72px}.page-footer a{display:inline-block;margin:6px 10px}}
 </style>
 </head>
 <body>
@@ -71,11 +81,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="lp-wrap">
 
+  <header class="site-header">
+    <div class="site-inner">
+      <a href="index.html#top" class="site-logo">AI<span>サロン</span></a>
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <a href="index.html#about">AIサロンとは</a>
+        <a href="index.html#activities">活動内容</a>
+        <a href="index.html#profile">代表挨拶</a>
+        <a href="index.html#faq">よくある質問</a>
+      </nav>
+      <a href="https://stripe.com/en-jp" class="site-btn" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
+    </div>
+  </header>
+
   <header class="page-header">
-    <a href="index.html" class="back-link">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-      トップに戻る
-    </a>
     <h1>プライバシーポリシー</h1>
     <p>Privacy Policy</p>
   </header>
@@ -84,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="last-updated">最終更新日：2026年5月23日</p>
 
     <div class="section-block">
-      <p>山田太郎（以下「当方」）は、本サービス（〇〇サロン）をご利用いただくお客様の個人情報の保護を重要な責務と認識し、以下のプライバシーポリシーに従って適切に取り扱います。</p>
+      <p>山田太郎（以下「当方」）は、本サービス（AIサロン）をご利用いただくお客様の個人情報の保護を重要な責務と認識し、以下のプライバシーポリシーに従って適切に取り扱います。</p>
     </div>
 
     <div class="section-block">
@@ -159,8 +178,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="index.html">トップ</a>
     <a href="tokushoho.html">特定商取引法</a>
     <a href="terms.html">利用規約</a>
-    <a href="contact.html">お問い合わせ</a>
-    <p>© 2026 〇〇サロン All Rights Reserved.</p>
+    <a href="mailto:info@example.com">お問い合わせ</a>
+    <p>© 2026 <a href="index.html#top">AIサロン</a> All Rights Reserved.</p>
   </footer>
 
 </div>

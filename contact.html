@@ -2,40 +2,61 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>お問い合わせ | 〇〇サロン</title>
+<title>お問い合わせ | AIサロン</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
 <style>
-:root{--blue:#1E88E5;--blue-deep:#1565C0;--blue-soft:#E3F2FD;--blue-soft-2:#F7FBFF;--navy:#0D2B45;--ink:#1F2937;--ink-2:#374151;--muted:#6B7280;--line:#E5E7EB;--max-w:1000px}
+:root{--blue:#0053E6;--blue-deep:#003FB3;--blue-soft:#E0EAFF;--blue-soft-2:#F7FBFF;--navy:#0D2B45;--ink:#1F2937;--ink-2:#374151;--muted:#6B7280;--line:#E5E7EB;--max-w:1000px}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{font-family:"Noto Sans JP",system-ui,sans-serif;color:var(--ink);background:#fff;min-height:100vh;line-height:1.75;-webkit-font-smoothing:antialiased}
+html,body{font-family:"Noto Sans JP",system-ui,sans-serif;color:var(--ink);background:var(--blue-soft-2);min-height:100vh;line-height:1.75;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 .lp-wrap{width:100%;min-height:100vh;background:#fff}
-.page-header{background:linear-gradient(180deg,#F7FBFF 0%,#E3F2FD 100%);padding:112px 24px 72px;text-align:center;border-bottom:1px solid rgba(30,136,229,.12)}
-.back-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-size:13px;font-weight:700;text-decoration:none;margin-bottom:24px}
-.back-link:hover{color:var(--blue-deep)}
+.site-header{position:fixed;inset:0 0 auto;z-index:200;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,83,230,.1)}
+.site-inner{max-width:1200px;margin:0 auto;padding:14px 40px;display:flex;align-items:center;gap:32px}
+.site-logo{font-size:20px;font-weight:900;color:var(--navy);letter-spacing:.03em;text-decoration:none;flex-shrink:0}
+.site-logo span{color:var(--blue)}
+.site-nav{display:flex;align-items:center;justify-content:flex-end;gap:28px;flex:1}
+.site-nav a{font-size:13px;font-weight:500;color:var(--ink-2);white-space:nowrap;text-decoration:none;transition:color .2s}
+.site-nav a:hover{color:var(--blue)}
+.site-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 32px;background:var(--blue);color:#fff;text-decoration:none;border-radius:999px;font-size:15px;font-weight:700;line-height:1;white-space:nowrap;box-shadow:0 4px 20px rgba(0,83,230,.35);transition:transform .2s,box-shadow .2s}
+.site-btn::after{content:"→";font-size:16px}
+.site-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,83,230,.45)}
+.page-header{background:linear-gradient(180deg,#F7FBFF 0%,#E0EAFF 100%);padding:144px 24px 72px;text-align:center;border-bottom:1px solid rgba(0,83,230,.12)}
 h1{font-size:clamp(30px,4vw,48px);font-weight:900;color:var(--navy);line-height:1.25}
 .page-header p{font-size:13px;color:var(--blue);margin-top:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
 .content{width:100%;max-width:var(--max-w);margin:0 auto;padding:72px 24px 96px}
 .lead{font-size:16px;color:var(--ink-2);line-height:2;font-weight:500;margin:0 auto 32px;max-width:720px;text-align:center}
-.contact-card{background:#fff;border:1px solid rgba(30,136,229,.16);border-radius:8px;padding:32px;box-shadow:0 8px 32px rgba(30,136,229,.08);max-width:720px;margin:0 auto}
+.contact-card{background:#fff;border:1px solid rgba(0,83,230,.16);border-radius:18px;padding:32px;box-shadow:0 10px 36px rgba(0,83,230,.08);max-width:720px;margin:0 auto}
 .contact-label{font-size:13px;font-weight:900;color:var(--blue);margin-bottom:12px;letter-spacing:.08em}
-.mail-link{display:block;background:var(--blue);color:#fff;text-align:center;text-decoration:none;font-size:18px;font-weight:900;padding:18px 24px;border-radius:8px;box-shadow:0 6px 20px rgba(30,136,229,.3);word-break:break-all}
+.mail-link{display:block;background:var(--blue);color:#fff;text-align:center;text-decoration:none;font-size:18px;font-weight:900;padding:18px 24px;border-radius:999px;box-shadow:0 6px 24px rgba(0,83,230,.32);word-break:break-all}
 .mail-link:hover{background:var(--blue-deep)}
 .note{font-size:13px;color:var(--muted);line-height:1.9;margin-top:18px}
 .page-footer{background:var(--navy);padding:40px 24px;text-align:center}
 .page-footer a{color:rgba(255,255,255,.72);font-size:13px;font-weight:500;text-decoration:none;margin:0 12px}
 .page-footer a:hover{color:#fff}
 .page-footer p{font-size:12px;color:rgba(255,255,255,.35);margin-top:18px}
-@media (max-width: 640px){.page-header{padding:88px 20px 56px}.content{padding:48px 20px 72px}.contact-card{padding:24px}.page-footer a{display:inline-block;margin:6px 10px}}
+.page-footer p a{font-size:inherit;color:inherit;margin:0}
+@media (max-width: 900px){.site-nav{display:none}}
+@media (max-width: 640px){.site-inner{padding:12px 20px}.site-btn{padding:13px 20px;font-size:13px}.page-header{padding:112px 20px 56px}.content{padding:48px 20px 72px}.contact-card{padding:24px}.page-footer a{display:inline-block;margin:6px 10px}}
 </style>
 </head>
 <body>
 <div class="lp-wrap">
+  <header class="site-header">
+    <div class="site-inner">
+      <a href="index.html#top" class="site-logo">AI<span>サロン</span></a>
+      <nav class="site-nav" aria-label="グローバルナビゲーション">
+        <a href="index.html#about">AIサロンとは</a>
+        <a href="index.html#activities">活動内容</a>
+        <a href="index.html#profile">代表挨拶</a>
+        <a href="index.html#faq">よくある質問</a>
+      </nav>
+      <a href="https://stripe.com/en-jp" class="site-btn" target="_blank" rel="noopener noreferrer">今すぐ入会する</a>
+    </div>
+  </header>
   <header class="page-header">
-    <a href="index.html" class="back-link">トップに戻る</a>
     <h1>お問い合わせ</h1>
     <p>Contact</p>
   </header>
@@ -52,7 +73,7 @@ h1{font-size:clamp(30px,4vw,48px);font-weight:900;color:var(--navy);line-height:
     <a href="tokushoho.html">特定商取引法</a>
     <a href="privacy.html">プライバシーポリシー</a>
     <a href="terms.html">利用規約</a>
-    <p>© 2026 Community All Rights Reserved.</p>
+    <p>© 2026 <a href="index.html#top">AIサロン</a> All Rights Reserved.</p>
   </footer>
 </div>
 </body>
