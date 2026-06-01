@@ -1225,7 +1225,7 @@
     ============================================================ */
     .sp-floating-cta { display: none; }
     @media (max-width: 599px) {
-      body { padding-bottom: 92px; }
+      body.has-sp-cta { padding-bottom: 92px; }
       .sp-floating-cta {
         position: fixed;
         left: 14px;
@@ -1248,6 +1248,14 @@
         opacity: 1;
         transform: translateY(0);
         animation: floatingPulse 8.4s ease-in-out infinite;
+        transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+      }
+      .sp-floating-cta.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(18px);
+        animation: none;
       }
       .sp-floating-cta::after {
         content: '→';
@@ -1895,6 +1903,30 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
     document.querySelectorAll('.fade').forEach(el => io.observe(el));
+
+    // Hide the mobile floating CTA while the footer is in view.
+    const floatingCta = document.querySelector('.sp-floating-cta');
+    const footer = document.querySelector('.footer');
+    const spQuery = window.matchMedia('(max-width: 599px)');
+
+    if (floatingCta && footer) {
+      let footerInView = false;
+
+      const updateFloatingCta = () => {
+        const shouldShow = spQuery.matches && !footerInView;
+        floatingCta.classList.toggle('is-hidden', !shouldShow);
+        document.body.classList.toggle('has-sp-cta', shouldShow);
+      };
+
+      const footerObserver = new IntersectionObserver(entries => {
+        footerInView = entries.some(entry => entry.isIntersecting);
+        updateFloatingCta();
+      }, { threshold: 0, rootMargin: '0px 0px -92px 0px' });
+
+      footerObserver.observe(footer);
+      spQuery.addEventListener('change', updateFloatingCta);
+      updateFloatingCta();
+    }
 
   </script>
 
