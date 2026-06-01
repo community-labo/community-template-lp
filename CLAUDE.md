@@ -50,6 +50,17 @@ The top page has a mobile-only floating CTA:
 - Join CTA URL: `https://stripe.com/en-jp`
 - Contact email: `info@ai-salon.jp`
 
+## Security Rules
+
+- Never add real secrets, private keys, API tokens, SMTP credentials, Stripe secret keys, webhook secrets, or private `.env` values to this repository.
+- Treat this repository as a public template. Do not add customer data, member data, personal addresses, private phone numbers, or non-public business information unless the user explicitly confirms it is safe for publication.
+- Keep payment links clearly separated from secret payment credentials. Public checkout/payment URLs may appear in HTML, but secret keys must not.
+- When changing GTM, analytics, chat, form, CRM, or payment scripts, document the provider and purpose in `README.md`.
+- Do not add third-party scripts that collect personal data without also updating the privacy policy content.
+- If a backend form or registration flow is introduced, add server-side validation guidance, privacy policy updates, and avoid storing submitted data in static files.
+- Use placeholder values in template-facing files when the final operator information is unknown.
+- Review `SECURITY.md` before making changes that involve tracking, forms, payments, authentication, or personal data.
+
 ## Verification
 
 For simple HTML/CSS edits, inspect the changed files and run:
